@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    width: 30rem;
+    height: 52rem;
+    background-color: gray;
+    border-radius: 2rem;  
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+.output{
+    height: 37%;
+    width: 100%;
+    background-color: red;
+}

@@ -43,8 +43,9 @@ body {
     outline: none;
     background-color: transparent;
     color: #ffffff;
-    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     font-family: Dm;
+    direction: rtl;
 }
 
 .input {
@@ -66,6 +67,11 @@ body {
 
 }
 
+.button:hover {
+    background-color: #042842;
+    cursor: pointer;
+}
+
 .button,
 .calculator__output {
     user-select: none;
@@ -74,12 +80,14 @@ body {
     -ms-user-select: none;
 }
 
-.whtie {
+.white {
     color: #ffffff;
 }
 
-.levender {
+.lavender {
     color: #A181F2;
+    font-weight: 900;
+    font-size: 2.1rem;
 }
 
 .green {
@@ -96,4 +104,36 @@ body {
 
 .button:active {
     transform: scale(0.95);
+}
+
+@media (max-width: 991px) {
+    .input {
+        grid-template-rows: 7rem 6.5rem 6.5rem 6.5rem 6.5rem;
+        font-size: x-large;
+    }
+
+    .main {
+        height: 52rem;
+        width: 28rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .input {
+        grid-template-rows: 6.5rem 5.5rem 5.5rem 5.5rem 5.5rem;
+        font-size: x-large;
+    }
+
+    .main {
+        height: 40rem;
+        width: 21rem;
+    }
+
+    .output {
+        height: 30%;
+        width: 100%;
+        background-color: #001E34;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

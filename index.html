@@ -5,35 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Waves/0.7.6/waves.min.css" />
-    <title>Calcolator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Waves/0.7.6/waves.min.css">
+    <title>Calculator</title>
 </head>
 
 <body>
 
     <main class="main">
         <div class="output">
-            <span class="calculator__output" id="out">0</span>
+            <span class="calculator__output" id="output">0</span>
         </div>
+
         <div class="input">
-            <button class="button green">C</button>
-            <button class="button green">d</button>
-            <button class="button lavender">/</button>
-            <button class="button lavender">x</button>
-            <button class="button white">7</button>
-            <button class="button white">8</button>
-            <button class="button white">9</button>
-            <button class="button lavender">-</button>
-            <button class="button white">4</button>
-            <button class="button white">5</button>
-            <button class="button white">6</button>
-            <button class="button lavender">+</button>
-            <button class="button white">1</button>
-            <button class="button white">2</button>
-            <button class="button white">3</button>
-            <button class="button green">=</button>
-            <button class="button white">0</button>
-            <button class="button white">.</button>
+            <button class="button green" id="clear">C</button>
+            <button class="button green" id="delete">d</button>
+            <button class="button lavender" id="divide">/</button>
+            <button class="button lavender" id="multiply">x</button>
+
+            <button class="button white" id="seven">7</button>
+            <button class="button white" id="eight">8</button>
+            <button class="button white" id="nine">9</button>
+            <button class="button lavender" id="subtract">-</button>
+
+            <button class="button white" id="four">4</button>
+            <button class="button white" id="five">5</button>
+            <button class="button white" id="six">6</button>
+            <button class="button lavender" id="add">+</button>
+
+            <button class="button white" id="one">1</button>
+            <button class="button white" id="two">2</button>
+            <button class="button white" id="three">3</button>
+            <button class="button green" id="equal">=</button>
+
+            <button class="button white" id="zero">0</button>
+            <button class="button white" id="decimal">.</button>
         </div>
     </main>
 

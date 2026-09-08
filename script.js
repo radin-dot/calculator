@@ -22,3 +22,11 @@ const eightButton = document.getElementById("eight");
 const nineButton = document.getElementById("nine");
 
 const decimalButton = document.getElementById("decimal");
+
+const show = "";
+
+const click1 = document.querySelector(".button");
+
+click1.addEventListener("click", add = () =>{
+    console.log(event.target)
+});

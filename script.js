@@ -23,11 +23,9 @@ const nineButton = document.getElementById("nine");
 
 const decimalButton = document.getElementById("decimal");
 
-
 let show = "";
 
 const click1 = document.querySelectorAll("button");
-
 
 click1.forEach((click1) => {
 
@@ -39,9 +37,7 @@ click1.forEach((click1) => {
             return;
         }
 
-
         show = show + content;
-
 
         if (
             show[0] == "/" ||
@@ -55,17 +51,11 @@ click1.forEach((click1) => {
             show = "";
 
         }
-
-
         output.innerHTML = show;
-
     });
-
 });
 
-
 equalButton.addEventListener("click", () => {
-
 
     if (show.includes("+")) {
 
@@ -79,13 +69,7 @@ equalButton.addEventListener("click", () => {
         first = Number(first);
         sec = Number(sec);
 
-
         let answer = first + sec;
-
-
         output.innerHTML = answer;
-
     }
-
-
 });

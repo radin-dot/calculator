@@ -70,6 +70,63 @@ equalButton.addEventListener("click", () => {
         sec = Number(sec);
 
         let answer = first + sec;
-        output.innerHTML = answer;
+        output.innerText = answer;
+    }
+});
+
+equalButton.addEventListener("click", () => {
+
+    if (show.includes("x")) {
+
+        let were = show.indexOf("x");
+
+
+        let first = show.slice(0, were);
+        let sec = show.slice(were + 1);
+
+
+        first = Number(first);
+        sec = Number(sec);
+
+        let answer = first * sec;
+        output.innerText = answer;
+    }
+});
+
+equalButton.addEventListener("click", () => {
+
+    if (show.includes("/")) {
+
+        let were = show.indexOf("/");
+
+
+        let first = show.slice(0, were);
+        let sec = show.slice(were + 1);
+
+
+        first = Number(first);
+        sec = Number(sec);
+
+        let answer = first / sec;
+        output.innerText = answer;
+    }
+});
+
+equalButton.addEventListener("click", () => {
+
+    if (show.includes("-")) {
+
+        let were = show.indexOf("-");
+
+
+        let first = show.slice(0, were);
+        let sec = show.slice(were + 1);
+
+
+        first = Number(first);
+        sec = Number(sec);
+
+        let answer = first - sec;
+        output.innerText = answer;
     }
 });

@@ -38,14 +38,17 @@ body {
 
 .calculator__output {
     height: 68%;
+    width: 81%;
+    margin: auto;
+    margin-bottom: 0rem;
     font-size: 6.5rem;
     border: none;
     outline: none;
     background-color: transparent;
     color: #ffffff;
-    padding-right: 2.5rem;
     font-family: Dm;
     direction: rtl;
+    overflow: auto;
 }
 
 .input {
@@ -103,6 +106,8 @@ body {
 
 .button:active {
     transform: scale(0.95);
+    border-radius: 0.8rem;
+    background-color: #034b7e4d;
 }
 
 @media (max-width: 991px) {

@@ -57,5 +57,5 @@ Possible improvements for future versions:
 
 Created by Radin
 
-view (github)(https://radin-dot.github.io/calculator/)
+view [github](https://radin-dot.github.io/calculator/)
 A beginner JavaScript project built for learning and improving programming skills.

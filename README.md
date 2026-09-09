@@ -15,17 +15,6 @@ The main goal of building this project was to learn how to:
 * Separate numbers from operators
 * Perform basic calculations using JavaScript logic
 
-## Features
-
-* Addition (+)
-* Subtraction (-)
-* Multiplication (x)
-* Division (/)
-* Clear button (C)
-* Delete last character button (D)
-* Basic input validation
-* Interactive calculator interface
-
 ## Technologies Used
 
 * HTML5
@@ -68,4 +57,5 @@ Possible improvements for future versions:
 
 Created by Radin
 
+view (github)(https://radin-dot.github.io/calculator/)
 A beginner JavaScript project built for learning and improving programming skills.

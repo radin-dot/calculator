@@ -1,0 +1,147 @@
+@font-face {
+    font-family: DM;
+    src: url(Fonts/DMSans_18pt-Medium.ttf);
+}
+
+@font-face {
+    font-family: Scoutie;
+    src: url(Fonts/ScoutieSans-Medium.ttf);
+}
+
+body {
+    background: linear-gradient(45deg, #0c37579e, #001e34);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 30rem;
+    height: 55rem;
+    background-color: #05385c;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0rem 1rem 3rem 1rem #435663;
+}
+
+.output {
+    height: 37%;
+    width: 100%;
+    background-color: #001E34;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.calculator__output {
+    height: 68%;
+    width: 81%;
+    margin: auto;
+    margin-bottom: 0rem;
+    font-size: 6.5rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: Dm;
+    direction: rtl;
+    overflow: auto;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 7rem 7rem 7rem 7rem 7rem;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.button {
+    background-color: #002B4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #000910;
+    transition: 0.2s;
+    font-family: Scoutie;
+    font-size: 2.1rem;
+}
+
+.button:hover {
+    background-color: #042842;
+    cursor: pointer;
+}
+
+.button,
+.calculator__output {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.lavender {
+    color: #A181F2;
+    font-weight: 900;
+}
+
+.green {
+    color: #429854;
+}
+
+.button:nth-of-type(17) {
+    grid-column: span 2;
+}
+
+.button:nth-of-type(16) {
+    grid-row: span 2;
+}
+
+.button:active {
+    transform: scale(0.95);
+    border-radius: 0.8rem;
+    background-color: #034b7e4d;
+}
+
+@media (max-width: 991px) {
+    .input {
+        grid-template-rows: 7rem 6.5rem 6.5rem 6.5rem 6.5rem;
+        font-size: x-large;
+    }
+
+    .main {
+        height: 52rem;
+        width: 28rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .input {
+        grid-template-rows: 6.5rem 5.5rem 5.5rem 5.5rem 5.5rem;
+        font-size: x-large;
+    }
+
+    .main {
+        height: 40rem;
+        width: 21rem;
+    }
+
+    .output {
+        height: 30%;
+        width: 100%;
+        background-color: #001E34;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .calculator__output{
+        font-size: 2rem;
+    }
+}

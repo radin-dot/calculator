@@ -21,16 +21,6 @@ The main goal of building this project was to learn how to:
 * CSS3
 * JavaScript (Vanilla JS)
 
-## How It Works
-
-The calculator stores the user's input as a string.
-
-Example:
-
-```
-12+5
-```
-
 When the user presses the equal button, the program:
 
 1. Finds the mathematical operator
